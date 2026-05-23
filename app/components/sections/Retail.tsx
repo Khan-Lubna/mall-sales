@@ -42,19 +42,11 @@ export default function Retail() {
       <div className="mx-auto max-w-7xl">
 
         {/* Heading */}
-        {/* <motion.div
-          initial={{ opacity: 0, y: 80 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="mb-20"
-        > */}
         <Reveal className="mb-6">
           <p className="mb-4 text-sm uppercase tracking-[0.4em] text-neutral-500">
             Retail Ecosystem
           </p>
 
-          {/* <h2 className="max-w-5xl text-4xl font-bold leading-tight md:text-6xl"> */}
           <h2 className="max-w-4xl text-3xl font-bold leading-[1] tracking-[-0.03em] md:text-5xl lg:text-6xl">
             Home To The World’s
             Most Iconic Brands
@@ -69,7 +61,6 @@ export default function Retail() {
             {[...brands, ...brands].map((brand, index) => (
               <div
                 key={index}
-                // className="relative h-12 w-32 flex-shrink-0 opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0"
                 className="relative h-12 w-32 flex-shrink-0 opacity-60 grayscale transition-all duration-500 hover:opacity-100 hover:grayscale-0"
               >
                 <Image
@@ -89,18 +80,6 @@ export default function Retail() {
         <div className="grid gap-4 md:grid-cols-3">
 
           {cards.map((card, index) => (
-            // <motion.div
-            //   key={index}
-            //   initial={{ opacity: 0, y: 80 }}
-            //   whileInView={{ opacity: 1, y: 0 }}
-            //   transition={{
-            //     duration: 0.8,
-            //     delay: index * 0.15,
-            //   }}
-            //   viewport={{ once: true }}
-            //   className="group relative overflow-hidden rounded-[2rem]"
-            // >
-
             <Reveal
               key={index}
               delay={index * 0.15}
@@ -124,13 +103,9 @@ export default function Retail() {
 
               </div>
             </Reveal>
-            // </motion.div>
           ))}
-
         </div>
-
       </div>
-
     </section>
   );
 }

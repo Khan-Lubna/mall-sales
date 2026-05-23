@@ -18,14 +18,11 @@ export default function Hero() {
       </video>
 
       {/* Dark Overlay */}
-      {/* <div className="absolute inset-0 bg-black/50" /> */}
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/60 via-black/25 to-black/80" />
 
-      {/* <div className="absolute inset-0 z-0 backdrop-blur-[2px]" /> */}
       <div className="absolute inset-0 z-0 backdrop-blur-[1px]" />
 
       {/* Content */}
-      {/* <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center"> */}
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 pb-16 md:pb-24 text-center">
 
         <motion.p
@@ -41,7 +38,6 @@ export default function Hero() {
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
-          // className="max-w-5xl text-5xl font-bold leading-tight md:text-7xl"
           className="max-w-4xl text-4xl font-bold leading-[0.95] tracking-[-0.03em] md:text-6xl lg:text-7xl"
         >
           More Than A Mall.
@@ -53,7 +49,6 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
-          // className="mt-6 max-w-2xl text-neutral-300 md:text-lg"
           className="mt-6 max-w-xl text-neutral-300 md:text-lg"
         >
           Where luxury retail, entertainment, culture, and global experiences converge.
@@ -67,7 +62,6 @@ export default function Hero() {
           <div className="mt-2 h-2 w-2 rounded-full bg-white" />
         </div>
       </div>
-
     </section>
   );
 }

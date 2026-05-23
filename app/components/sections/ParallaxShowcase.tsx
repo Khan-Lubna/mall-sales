@@ -27,7 +27,6 @@ export default function ParallaxShowcase() {
 
             {/* Background Image */}
             <motion.div
-                // style={{ scale }}
                 style={{
                     scale,
                     opacity,
@@ -45,9 +44,7 @@ export default function ParallaxShowcase() {
             </motion.div>
 
             {/* Overlay */}
-            {/* <div className="absolute inset-0 bg-black/50" /> */}
             <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/25 to-black/80" />
-
             <div className="absolute inset-0 backdrop-blur-[1px]" />
 
             {/* Content */}
@@ -57,7 +54,6 @@ export default function ParallaxShowcase() {
             >
 
                 <div className="max-w-4xl">
-
                     <p className="mb-6 text-sm uppercase tracking-[0.5em] text-neutral-300">
                         A Global Destination
                     </p>
@@ -71,7 +67,6 @@ export default function ParallaxShowcase() {
                 </div>
 
             </motion.div>
-
         </section>
     );
 }

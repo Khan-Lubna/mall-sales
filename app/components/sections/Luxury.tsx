@@ -64,7 +64,6 @@ export default function Luxury() {
 
             {/* Content */}
             <div className="absolute bottom-8 left-6 max-w-xl md:bottom-12 md:left-12">
-
               <p className="mb-4 text-sm uppercase tracking-[0.4em] text-neutral-300">
                 Global Luxury Destination
               </p>
@@ -73,11 +72,8 @@ export default function Luxury() {
                 Home To The World’s
                 Most Prestigious Brands
               </h3>
-
             </div>
-
           </div>
-
         </Reveal>
 
         {/* Luxury Cards */}
@@ -91,31 +87,23 @@ export default function Luxury() {
             >
 
               <div className="relative h-[420px] overflow-hidden">
-
                 <Image
                   src={card.image}
                   alt={card.title}
                   fill
                   className="object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-105"
                 />
-
               </div>
 
               <div className="p-6 md:p-8">
-
                 <h3 className="text-2xl font-semibold tracking-[-0.03em]">
                   {card.title}
                 </h3>
-
               </div>
-
             </Reveal>
           ))}
-
         </div>
-
       </div>
-
     </section>
   );
 }

@@ -76,7 +76,6 @@ export default function Navbar() {
   return (
     <header className="fixed left-1/2 top-6 z-50 w-[95%] max-w-5xl -translate-x-1/2">
 
-      {/* <div className="flex items-center justify-between rounded-full border border-white/10 bg-black/30 px-6 py-4 backdrop-blur-xl"> */}
       <div className={clsx(
         "flex items-center justify-between rounded-full px-5 py-3 md:px-6 md:py-4 transition-all duration-500",
         scrolled
@@ -88,7 +87,6 @@ export default function Navbar() {
         {/* Logo */}
         <a
           href="#"
-          // className="text-sm font-semibold uppercase tracking-[0.4em] text-white"
           className="text-sm font-semibold uppercase tracking-[0.4em] text-white transition-opacity duration-300 hover:opacity-80"
         >
           Dubai Mall
@@ -102,10 +100,8 @@ export default function Navbar() {
               key={link.href}
               href={`#${link.href}`}
               className={clsx(
-                // "text-sm transition duration-300",
                 "text-sm transition-all duration-300 hover:-translate-y-[1px]",
                 activeSection === link.href
-                  // ? "text-white"
                   ? "text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]"
                   : "text-neutral-400 hover:text-white"
               )}

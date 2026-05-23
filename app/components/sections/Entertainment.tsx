@@ -36,14 +36,6 @@ export default function Entertainment() {
 
       <div className="mx-auto max-w-7xl">
 
-        {/* Heading */}
-        {/* <motion.div
-          initial={{ opacity: 0, y: 80 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9 }}
-          viewport={{ once: true }}
-          className="mb-24"
-        > */}
         <Reveal className="mb-12">
           <p className="mb-4 text-sm uppercase tracking-[0.4em] text-neutral-500">
             Attractions & Entertainment
@@ -55,16 +47,7 @@ export default function Entertainment() {
             A Destination Experience.
           </h2>
         </Reveal>
-        {/* </motion.div> */}
 
-        {/* Featured Attraction */}
-        {/* <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
-          className="relative mb-20 overflow-hidden rounded-[2.5rem]"
-        > */}
         <Reveal className="group relative mb-10 overflow-hidden rounded-[2.5rem]">
 
           <div className="relative h-[65vh] md:h-[80vh]">
@@ -98,23 +81,11 @@ export default function Entertainment() {
           </div>
         </Reveal>
 
-        {/* </motion.div> */}
-
         {/* Attraction Cards */}
         <div className="grid gap-4 md:grid-cols-3">
 
           {attractions.map((item, index) => (
-            // <motion.div
-            //   key={index}
-            //   initial={{ opacity: 0, y: 80 }}
-            //   whileInView={{ opacity: 1, y: 0 }}
-            //   transition={{
-            //     duration: 0.8,
-            //     delay: index * 0.15,
-            //   }}
-            //   viewport={{ once: true }}
-            //   className="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-md"
-            // >
+
             <Reveal
               key={index}
               delay={index * 0.15}
@@ -144,14 +115,9 @@ export default function Entertainment() {
 
               </div>
             </Reveal>
-
-            // </motion.div>
           ))}
-
         </div>
-
       </div>
-
     </section>
   );
 }
