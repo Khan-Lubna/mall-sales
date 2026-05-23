@@ -1,8 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dubai Mall Sales Deck
+
+An interactive, browser-based sales presentation for Dubai Mall - the world's largest shopping and entertainment destination.
+
+## Overview
+
+This project transforms the traditional fragmented sales process into a cinematic, self-contained web experience that drives leasing, sponsorship, and event bookings.
+
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Styling**: Tailwind CSS v4
+- **Animations**: Framer Motion
+- **Smooth Scrolling**: Lenis
+- **UI Components**: Custom components with React
+
+## Features
+
+### Phase 1 - Core Interactive Overview
+- Cinematic hero section with video background
+- Data-driven statistics and metrics
+- Retail, luxury, dining, and entertainment showcases
+- Event hosting capabilities
+- Responsive design with luxury brand aesthetics
+
+### Phase 2 - Expandable Architecture
+- **Venues Module**: Detailed venue specifications (Performing Arts Center, Convention Hub, Fashion Runway)
+- **Leasing Module**: Segmented paths for Luxury, Mid-Tier, F&B, and Pop-Up retailers
+- **Sponsorship Module**: Partnership tiers with audience data and activation examples
+
+## Design Decisions
+
+1. **Luxury Brand Inspiration**: Minimal chrome, maximum impact inspired by Apple, Hermès, Tesla
+2. **Video-First Storytelling**: Hero video and scroll-triggered visuals as primary narrative
+3. **Non-Linear Navigation**: Navbar with smooth scroll to any section
+4. **Modular Architecture**: Components designed for easy expansion without rewrites
+5. **Performance Optimized**: Lazy loading, optimized assets, smooth animations
+
+## AI Integration
+
+- **Asset Generation**: Supplemented limited real assets with AI-generated imagery from Unsplash
+- **Component Structure**: AI-assisted architecture planning for modular expansion
+- **Content Strategy**: AI-guided copywriting for compelling business narratives
 
 ## Getting Started
-
-First, run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +50,36 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the sales deck.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+app/
+├── components/
+│   ├── animations/     # Reveal, transition animations
+│   ├── layout/         # Navbar, loader, scroll components
+│   ├── sections/       # Page sections (Hero, Retail, Events, etc.)
+│   └── ui/             # Reusable components
+├── globals.css
+└── layout.tsx
+```
 
-## Learn More
+## Development
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run dev      # Development server
+npm run build    # Production build
+npm run lint     # Run ESLint
+npm run start    # Start production server
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Deploy to Vercel, Netlify, or GitHub Pages. The app is statically exportable.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Private - Dubai Mall Sales Deck
